@@ -13,21 +13,17 @@
 
 ## 개인 담당 범위
 
-내가 정리한 주요 담당 범위는 **Server / Database, Front / UI, AWS 서버 환경 구성, 웹서버 이전 준비, 데이터 흐름 정리, Python 시연 코드 정리**이다.
+정리한 주요 담당 범위는 **Server / Front / UI, AWS 서버 환경 구성, 웹서버 이전, Python 코드 정리**이다.
 
 주요 작업은 다음과 같다.
 
 - 서버 및 데이터베이스 구조 정리
-- Raspberry Pi 기반 서버 구성 방향 조사 및 정리
-- MariaDB / SQLite 등 데이터베이스 사용 방향 비교
 - 센서 데이터 저장 구조 설계 정리
 - 웹 UI와 서버 데이터 연동 흐름 정리
 - 지도 기반 대시보드 구조 정리
-- AWS EC2 Ubuntu 서버 오픈 및 접속 확인
-- 기존 localhost 웹서버를 AWS 환경으로 옮기기 위한 준비
-- DynamoDB, AI 모델, Web 페이지 업데이트 흐름 정리
+- AWS EC2 서버 오픈 및 접속 확인
+- 기존 localhost 웹서버를 AWS 환경 이전
 - Python 기반 시연용 통합 서버 코드 정리
-- GitHub 제출용 보안 정리
 
 ---
 
@@ -40,9 +36,9 @@
 - SSH
 - Python
 - SQLite
-- DynamoDB 연동 구조
+- DynamoDB
 - HTML / CSS / JavaScript
-- 지도 기반 Web UI
+- Web UI
 - LoRa Gateway 데이터 흐름
 - 센서 데이터 저장 및 조회 구조
 - AI 모델 결과를 웹에 반영하는 흐름
@@ -67,7 +63,7 @@
 
 ---
 
-## 12주차 진행 자료 반영 내용
+## 진행 자료 반영 내용
 
 추가 진행 자료를 기준으로 다음 내용을 반영했다.
 
@@ -163,14 +159,14 @@ SSH 접속을 통해 서버가 정상적으로 실행되는지 확인했고, 이
 실행 예시는 다음과 같다.
 
 ```bash
-cd src
+cd 전종설_Python
 python integrated_app.py
 ```
 
 브라우저에서 아래 주소로 접속하면 된다.
 
 ```text
-http://127.0.0.1:8000
+http://0.0.0.0:8000
 ```
 
 센서 데이터 시뮬레이션은 다음과 같이 실행할 수 있다.
